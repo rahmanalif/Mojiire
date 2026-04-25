@@ -1,0 +1,198 @@
+<!DOCTYPE html>{% load static %}
+<html lang="en">
+    <head>
+        <title>Mojiire SupportHer Inc</title>
+        <meta charset="UTF-8">
+        <link rel="icon" type="image/png" href="/static/img/mojiire-logo.png"/>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="{% static 'css/main.css' %}">
+        <link rel="stylesheet" href="{% static 'css/mentors.css' %}">
+        <link rel="stylesheet" href="{% static 'css/mentees.css' %}">
+        <link rel="stylesheet" href="{% static 'css/contact.css' %}">
+        <link rel="stylesheet" href="{% static 'css/gallery.css' %}">
+        <link rel="stylesheet" href="{% static 'css/event.css' %}">
+        <script src="https://zeffy-scripts.s3.ca-central-1.amazonaws.com/embed-form-script.min.js"></script>
+    </head>
+    <body>
+        <header>
+            <div id="header-banner">
+                <div>
+                    <a href="tel:+1(757) 738-8413">
+                        <svg fill="orange" width="16" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><title>phone</title><path d="M6.62,10.79C8.06,13.62 10.38,15.94 13.21,17.38L15.41,15.18C15.69,14.9 16.08,14.82 16.43,14.93C17.55,15.3 18.75,15.5 20,15.5A1,1 0 0,1 21,16.5V20A1,1 0 0,1 20,21A17,17 0 0,1 3,4A1,1 0 0,1 4,3H7.5A1,1 0 0,1 8.5,4C8.5,5.25 8.7,6.45 9.07,7.57C9.18,7.92 9.1,8.31 8.82,8.59L6.62,10.79Z" /></svg><span>+1(757)738-8413</span>
+                    </a>
+                    <a href="mailto:supporther@mojiire.onmicrosoft.com" style="margin-left: 50px;">
+                        <svg fill="orange" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="16"><title>email</title><path d="M20,8L12,13L4,8V6L12,11L20,6M20,4H4C2.89,4 2,4.89 2,6V18A2,2 0 0,0 4,20H20A2,2 0 0,0 22,18V6C22,4.89 21.1,4 20,4Z" /></svg><span>supporther@mojiire.onmicrosoft.com</span>
+                    </a>
+                </div>
+                <div>
+                    <a href="https://facebook.com/mojiire.supporther" target="_blank" rel="noopener noreferrer" aria-label="Mojiire SupportHer Facebook">
+                        <svg fill="white" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="16"><title>facebook</title><path d="M12 2.04C6.5 2.04 2 6.53 2 12.06C2 17.06 5.66 21.21 10.44 21.96V14.96H7.9V12.06H10.44V9.85C10.44 7.34 11.93 5.96 14.22 5.96C15.31 5.96 16.45 6.15 16.45 6.15V8.62H15.19C13.95 8.62 13.56 9.39 13.56 10.18V12.06H16.34L15.89 14.96H13.56V21.96A10 10 0 0 0 22 12.06C22 6.53 17.5 2.04 12 2.04Z" /></svg>
+                    </a>
+                    <a href="https://www.instagram.com/mojiire.supporther/" target="_blank" rel="noopener noreferrer" aria-label="Mojiire SupportHer Instagram">
+                        <svg fill="white" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="16"><title>instagram</title><path d="M7.8,2H16.2C19.4,2 22,4.6 22,7.8V16.2A5.8,5.8 0 0,1 16.2,22H7.8C4.6,22 2,19.4 2,16.2V7.8A5.8,5.8 0 0,1 7.8,2M7.6,4A3.6,3.6 0 0,0 4,7.6V16.4C4,18.39 5.61,20 7.6,20H16.4A3.6,3.6 0 0,0 20,16.4V7.6C20,5.61 18.39,4 16.4,4H7.6M17.25,5.5A1.25,1.25 0 0,1 18.5,6.75A1.25,1.25 0 0,1 17.25,8A1.25,1.25 0 0,1 16,6.75A1.25,1.25 0 0,1 17.25,5.5M12,7A5,5 0 0,1 17,12A5,5 0 0,1 12,17A5,5 0 0,1 7,12A5,5 0 0,1 12,7M12,9A3,3 0 0,0 9,12A3,3 0 0,0 12,15A3,3 0 0,0 15,12A3,3 0 0,0 12,9Z" /></svg>
+                    </a>
+                </div>
+            </div>
+            <nav>
+                <a href="{% url 'index' %}"><img src="{% static 'img/mojiire-logo.png' %}" alt="" width="140"></a>
+                <div class="mobile__menu">
+                    <svg fill="black" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="48"><title>menu</title><path d="M3,6H21V8H3V6M3,11H21V13H3V11M3,16H21V18H3V16Z" /></svg>
+                </div>
+                <div class="nav__right">
+                    <ul class="nav__main-menu">
+                        <li><a href="{% url 'index' %}" class="nav__links-url">Home</a></li>
+                        <li class="nav__links-dropdown">
+                            <button class="nav__links-url">
+                                <span>About Us</span>
+                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="24">
+                                    <title>chevron-down</title>
+                                    <path d="M7.41,8.58L12,13.17L16.59,8.58L18,10L12,16L6,10L7.41,8.58Z" />
+                                </svg>
+                            </button>
+                            <ul class="sub__dropdown">
+                                <li><a href="{% url 'about' %}">About</a></li>
+                                <li><a href="{% url 'program-components' %}">Board of Directors</a></li>
+                                <li><a href="{% url 'initiatives' %}">Initiatives</a></li>
+                            </ul>
+                        </li>
+                        <li><a href="{% url 'news' %}" class="nav__links-url">News</a></li>
+                        <li class="nav__links-dropdown">
+                            <button class="nav__links-url">
+                                <span>Membership</span>
+                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="24">
+                                    <title>chevron-down</title>
+                                    <path d="M7.41,8.58L12,13.17L16.59,8.58L18,10L12,16L6,10L7.41,8.58Z" />
+                                </svg>
+                            </button>
+                            <ul class="sub__dropdown">
+                                <li><a href="{% url 'mentors' %}">Mentors</a></li>
+                                <li><a href="{% url 'mentees' %}">Mentees</a></li>
+                            </ul>
+                        </li>
+                        <li><a href="{% url 'contact' %}" class="nav__links-url">Contact</a></li>
+                    </ul>
+                    <div id="donate-wrapper">
+                        <a href="{% url 'donate' %}">
+                            <span>Donate</span>
+                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="12" fill="red">
+                                <title>heart</title>
+                                <path d="M12,21.35L10.55,20.03C5.4,15.36 2,12.27 2,8.5C2,5.41 4.42,3 7.5,3C9.24,3 10.91,3.81 12,5.08C13.09,3.81 14.76,3 16.5,3C19.58,3 22,5.41 22,8.5C22,12.27 18.6,15.36 13.45,20.03L12,21.35Z" />
+                            </svg>
+                        </a>
+                    </div>
+                </div>
+            </nav>
+        </header>
+        <main>
+            {% block content %}
+
+            {% endblock %}
+            <section id="quick-links-section">
+                <div class="quick-links-columns">
+                    <div>
+                        <img src="{% static 'img/mojiire-logo.png' %}" alt="" width="140">
+                        <p>Welcome to Mojiire SupportHer Mentoring, where we are dedicated to nurturing and empowering the next generation of leaders.</p>
+                    </div>
+                    <div>
+                        <h3>Quick Links</h3>
+                        <a href="{% url 'index' %}">Home</a>
+                        <a href="{% url 'about' %}">About Us</a>
+                        <a href="{% url 'donate' %}">Donate</a>
+                        <a href="{% url 'contact' %}">Contact Page</a>
+                    </div>
+                    <div>
+                        <h3>Get Involved</h3>
+                        <a href="{% url 'mentors' %}">Become a Mentor</a>
+                        <a href="{% url 'program-components' %}">Board of Directors</a>
+                        <a href="{% url 'initiatives' %}">Initiatives</a>
+                    </div>
+                    <div>
+                        <a href="mailto:supporther@mojiire.onmicrosoft.com">
+                            <svg fill="orange" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="16"><title>email</title><path d="M20,8L12,13L4,8V6L12,11L20,6M20,4H4C2.89,4 2,4.89 2,6V18A2,2 0 0,0 4,20H20A2,2 0 0,0 22,18V6C22,4.89 21.1,4 20,4Z" /></svg><span>supporther@mojiire.onmicrosoft.com</span>
+                        </a>
+                        <a href="tel">
+                            <svg fill="orange" width="16" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><title>phone</title><path d="M6.62,10.79C8.06,13.62 10.38,15.94 13.21,17.38L15.41,15.18C15.69,14.9 16.08,14.82 16.43,14.93C17.55,15.3 18.75,15.5 20,15.5A1,1 0 0,1 21,16.5V20A1,1 0 0,1 20,21A17,17 0 0,1 3,4A1,1 0 0,1 4,3H7.5A1,1 0 0,1 8.5,4C8.5,5.25 8.7,6.45 9.07,7.57C9.18,7.92 9.1,8.31 8.82,8.59L6.62,10.79Z" /></svg><span>+1(757)738-8413</span>
+                        </a>
+                    </div>
+                </div>
+            </section>
+        </main>
+        <div class="lightbox" id="lightbox">
+            <div class="lightbox-content">
+                <img src="" alt="Enlarged image" id="lightbox-img">
+                <p id="lightbox-title"></p>
+                <span id="lightbox-close">&times;</span>
+            </div>
+        </div>
+        <footer>
+            <div>
+                &copy; <span id="datea"></span> Copyrights by Mojiire SupportHer Inc. All Rights Reserved
+            </div>
+            <div>
+                <a href="https://facebook.com/mojiire.supporther" target="_blank" rel="noopener noreferrer" aria-label="Mojiire SupportHer Facebook">
+                    <svg fill="white" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="16"><title>facebook</title><path d="M12 2.04C6.5 2.04 2 6.53 2 12.06C2 17.06 5.66 21.21 10.44 21.96V14.96H7.9V12.06H10.44V9.85C10.44 7.34 11.93 5.96 14.22 5.96C15.31 5.96 16.45 6.15 16.45 6.15V8.62H15.19C13.95 8.62 13.56 9.39 13.56 10.18V12.06H16.34L15.89 14.96H13.56V21.96A10 10 0 0 0 22 12.06C22 6.53 17.5 2.04 12 2.04Z" /></svg>
+                </a>
+                <a href="https://www.instagram.com/mojiire.supporther/" target="_blank" rel="noopener noreferrer" aria-label="Mojiire SupportHer Instagram">
+                    <svg fill="white" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="16"><title>instagram</title><path d="M7.8,2H16.2C19.4,2 22,4.6 22,7.8V16.2A5.8,5.8 0 0,1 16.2,22H7.8C4.6,22 2,19.4 2,16.2V7.8A5.8,5.8 0 0,1 7.8,2M7.6,4A3.6,3.6 0 0,0 4,7.6V16.4C4,18.39 5.61,20 7.6,20H16.4A3.6,3.6 0 0,0 20,16.4V7.6C20,5.61 18.39,4 16.4,4H7.6M17.25,5.5A1.25,1.25 0 0,1 18.5,6.75A1.25,1.25 0 0,1 17.25,8A1.25,1.25 0 0,1 16,6.75A1.25,1.25 0 0,1 17.25,5.5M12,7A5,5 0 0,1 17,12A5,5 0 0,1 12,17A5,5 0 0,1 7,12A5,5 0 0,1 12,7M12,9A3,3 0 0,0 9,12A3,3 0 0,0 12,15A3,3 0 0,0 15,12A3,3 0 0,0 12,9Z" /></svg>
+                </a>
+            </div>
+        </footer>
+    </body>
+    <script>
+        const d = new Date();
+
+        document.getElementById("datea").innerHTML = d.getFullYear();
+
+        window.addEventListener("DOMContentLoaded", () => {
+            const header = document.querySelector("header");
+            const main = document.querySelector("main");
+            if (header && main) {
+                const headerHeight = header.offsetHeight;
+                document.documentElement.style.setProperty("--header-offset", headerHeight + "px");
+                main.style.marginTop = headerHeight + "px";
+            }
+        });
+
+        const slides = Array.from(document.getElementsByClassName("mySlides"));
+        let slideIndex = 0;
+        let slideTimer = null;
+
+        function showSlides(n) {
+            if (!slides.length) return;
+
+            slideIndex = (n + slides.length) % slides.length;
+
+            slides.forEach((slide, index) => {
+                slide.classList.toggle("is-active", index === slideIndex);
+            });
+        }
+
+        function startSlides() {
+            if (!slides.length) return;
+            clearInterval(slideTimer);
+            slideTimer = setInterval(() => {
+                showSlides(slideIndex + 1);
+            }, 8000);
+        }
+
+        function plusSlides(n) {
+            showSlides(slideIndex + n);
+            startSlides();
+        }
+
+        showSlides(0);
+        startSlides();
+    </script>
+    <script>
+        document.addEventListener('DOMContentLoaded', function () {
+            const mobileMenuBtn = document.querySelector('.mobile__menu');
+            const navRight = document.querySelector('.nav__right');
+
+            mobileMenuBtn.addEventListener('click', function () {
+                navRight.classList.toggle('active');
+            });
+        });
+    </script>
+    <script src="{% static 'js/gallery.js' %}"></script>
+    <script src="{% static 'js/event.js' %}"></script>
+</html>

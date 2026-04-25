@@ -1,0 +1,51 @@
+{% extends 'base.html' %} {% block content %} {% load static %}
+<section>
+    <div class="subpage__section-container about">
+        <h1 class="subpage__h1">About Us</h1>
+    </div>
+</section>
+<section class="about__aboutus-container">
+    <div>
+        <img src="{% static 'img/about-2nd-image.jpg' %}" alt="" width="50%">
+    </div>
+    <div>
+        <span class="tagline">About Us</span>
+        <h2>Mojiire SupportHer Inc</h2>
+        <p>Mojiire SupportHer is a mentorship program designed to empower and support girls as they navigate through
+            their academic, personal, and professional journeys. Recognizing the unique challenges and opportunities
+            faced by young women in today's society, this program aims to provide them with guidance, inspiration, and
+            resources to unlock their full potential and achieve their goals.</p>
+    </div>
+</section>
+<section id="founder-section">
+    <div>
+        <span class="tagline">The Founder</span>
+        <h2>Zakiya Matthews - Founder and CEO of Mojiire SupportHer Inc.</h2>
+        <p>Zakiya Matthews has always believed that when you invest in a woman's confidence and self-worth, you change the trajectory of her life and the generations that follow. A proud Virginia native, she was raised with the unwavering love of her mother and the steady encouragement of her two sisters, shaping her belief in the power of support systems.</p>
+        <p>She earned her Bachelor of Science in Biology Pre-Professional with a minor in Chemistry from Norfolk State University, where she was a Dozoretz National Institute for Mathematics and Applied Sciences scholar. While at NSU, she learned the life-changing value of mentorship, both as a mentee and mentor, and became a member of Alpha Kappa Alpha Sorority, Inc., forming lifelong bonds with women of excellence and purpose.</p>
+        <p>With over 10 years of experience working with youth in education, Zakiya earned her Master's in Education from Elizabeth City State University while teaching Biology and Ecology at Churchland High School. She was later honored to be selected for the prestigious NSF Research Experiences for Teachers (RET) program, where she mastered the Argument-Driven Inquiry (ADI) approach. This method, centered on encouraging students to think critically, challenge assumptions, and design their experiments, mirrors her most profound passion: empowering young minds to think for themselves, believe in their capabilities, and shape their futures.</p>
+        <p>Today, Zakiya is channeling that same passion into Mojiire SupportHer Inc., a nonprofit organization dedicated to mentoring, uplifting, and equipping women and girls. Through career readiness programs, social-emotional support, and scholarships, she is creating spaces where young teens are not only heard but empowered to lead, thrive, and give back. Her mission is clear: help young girls rise, and the ripple effect will transform communities.</p>
+        <!-- <ul>
+            <li>Zakiya Matthews, Founder and CEO</li>
+            <li>Carolyn Matthews, Treasurer</li>
+            <li>Teandra Whitehead, Secretary</li>
+            <li>Dr. Angela Corprew-Boyd</li>
+            <li>Vivian Avant</li>
+        </ul> -->
+    </div>
+    <div>
+        <img src="{% static 'img/zakiya-matthews-profile-image.jpg' %}" alt="">
+    </div>
+</section>
+<section class="about__getinvolved-container">
+    <div>
+        <h2>Get Involved</h2>
+        <p>Whether you're a high school girl looking for guidance and support, a professional woman passionate about
+            mentoring the next generation, or a community member interested in supporting our mission, there are many
+            ways to get involved with Mojiire SupportHer. Together, we can inspire, empower, and uplift the leaders of
+            tomorrow. Join us in making a difference in the lives of young women today. Together, let's support her to
+            lead, thrive, and change the world.</p>
+        <a href="{% url 'mentees' %}" class="about__mission-link">Become a Mentee</a>
+    </div>
+</section>
+{% endblock %}

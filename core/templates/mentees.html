@@ -1,0 +1,18 @@
+{% extends 'base.html' %} {% block content %} {% load static %}
+            <section>
+                <div class="subpage__section-container mentee">
+                    <h1 class="subpage__h1">Become a Mentee</h1>
+                </div>
+            </section>
+            <section class="mentee__become-container">
+                <span>Ready to change lives?</span>
+                <h2>Become a Mentee</h2>
+            </section>
+            <section class="mentee__form-container">
+                <form action="{% url 'mentees' %}" method="post" class="mentee-form">
+                    {% csrf_token %}
+                    {{ form }}
+                    <button>Submit</button>
+                </form>
+            </section>
+{% endblock %}

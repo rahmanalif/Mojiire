@@ -1,0 +1,60 @@
+.mentor-form {
+    max-width: 800px; margin: auto;
+}
+.mentor__become-container {
+    padding: 40px 5%; text-align: center; background-color: #f9f3fb;
+}
+.mentor__form-container {
+    background-color: #f9f3fb; padding-bottom: 40px;
+}
+label {
+    display: block; margin-bottom: 8px; font-weight: 600;
+}
+label span {
+    color: red;
+}
+.mentor__form-container input[type="text"], .mentor__form-container input[type="email"], .mentor__form-container input[type="tel"], .mentor__form-container input[type="file"] {
+    width: 100%; padding: 12px; border: 1px solid #ccc; border-radius: 6px; font-size: 1rem;
+}
+.name-group {
+    display: flex; gap: 10px;
+}
+.name-group input {
+    flex: 1;
+}
+.phone-group {
+    display: flex; align-items: center; border: 1px solid #ccc; border-radius: 6px; padding: 0 12px;
+}
+.phone-group input {
+    border: none; flex: 1; padding: 12px 8px; font-size: 1rem;
+}
+.flag {
+    margin-right: 8px;
+}
+.file-drop {
+    border: 2px dashed #ccc; border-radius: 10px; padding: 20px; text-align: center; position: relative;
+}
+.file-drop input[type="file"] {
+    position: absolute; inset: 0; opacity: 0; cursor: pointer;
+}
+.upload-icon {
+    font-size: 2rem; margin-bottom: 10px;
+}
+button[type="submit"] {
+    background-color: #0069d9; color: white; padding: 12px 20px; border: none; border-radius: 6px; font-size: 1rem; cursor: pointer;
+}
+.footer-left {
+    display: flex; align-items: center; gap: 10px;
+}
+.footer-nav {
+    display: flex; gap: 20px; flex-wrap: wrap;
+}
+.footer-nav a {
+    text-decoration: none; color: #333; font-weight: 500;
+}
+.footer-donate button {
+    background-color: #6a1b9a; color: white; padding: 10px 16px; border: none; border-radius: 5px; font-weight: 600; display: flex; align-items: center; gap: 5px;
+}
+.mentor {
+    background: linear-gradient( rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2) ), url("/static/img/IMG_3544-edit.jpeg"); min-height: 450px; padding: 10px 5%; position: relative; top: 0; left: 0; text-align: center; color: #ffffff; background-size: cover; display: flex; justify-content: center; align-items: center; text-align: center;
+}

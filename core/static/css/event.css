@@ -1,0 +1,48 @@
+#events-page {
+    padding: 40px 5%; max-width: 1200px; margin: auto; color: #333;
+}
+h1 {
+    text-align: center; margin-bottom: 30px;
+}
+.events-container {
+    display: flex; flex-wrap: wrap; gap: 40px; justify-content: center;
+}
+.calendar {
+    background: white; border-radius: 12px; box-shadow: 0 4px 10px rgba(0,0,0,0.1); padding: 20px; flex: 1 1 300px;
+}
+.calendar-header {
+    display: flex; justify-content: space-between; align-items: center;
+}
+.calendar-header h2 {
+    font-size: 1.4rem;
+}
+.calendar-header button {
+    background: #8c2c8c; color: white; border: none; padding: 6px 12px; font-size: 1.2rem; border-radius: 6px; cursor: pointer;
+}
+.calendar-grid {
+    display: grid; grid-template-columns: repeat(7, 1fr); gap: 5px; margin-top: 15px; text-align: center;
+}
+.calendar-grid div {
+    padding: 10px; background: #f0e7f7; border-radius: 6px;
+}
+.today {
+    background-color: #8c2c8c; color: white; font-weight: bold;
+}
+.event-list {
+    background: white; border-radius: 12px; padding: 20px; box-shadow: 0 4px 10px rgba(0,0,0,0.1); flex: 1 1 300px;
+}
+.event-list ul {
+    list-style: none; padding-left: 0;
+}
+.event-list li {
+    padding: 10px 0; border-bottom: 1px solid #ccc;
+}
+.popup-overlay {
+    display: none; position: fixed; top: 0; left: 0; height: 100%; width: 100%; background-color: rgba(0,0,0,0.6); justify-content: center; align-items: center; z-index: 999;
+}
+.popup-content {
+    background: #fff; padding: 30px; border-radius: 10px; width: 90%; max-width: 400px; text-align: center; position: relative; box-shadow: 0 6px 20px rgba(0, 0, 0, 0.2);
+}
+#close-popup {
+    position: absolute; right: 15px; top: 10px; font-size: 1.5rem; cursor: pointer;
+}

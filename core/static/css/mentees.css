@@ -1,0 +1,45 @@
+.mentee-form {
+    max-width: 800px; margin: auto;
+}
+.mentee__become-container {
+    padding: 40px 5%; text-align: center; background-color: #f9f3fb;
+}
+.mentee__form-container {
+    background-color: #f9f3fb; padding-bottom: 40px;
+}
+.form-row {
+    margin-bottom: 20px;
+}
+label {
+    display: block; margin-bottom: 8px; font-weight: 600;
+}
+label span {
+    color: red;
+}
+.mentee__form-container .input[type="text"], .mentee__form-container input[type="email"], .mentee__form-container input[type="tel"], input[type="date"], textarea {
+    width: 100%; padding: 12px; border: 1px solid #ccc; border-radius: 6px; font-size: 1rem; box-sizing: border-box;
+}
+.name-group {
+    display: flex; gap: 10px;
+}
+.name-group input {
+    flex: 1;
+}
+.phone-group {
+    display: flex; align-items: center; border: 1px solid #ccc; border-radius: 6px; padding: 0 12px;
+}
+.phone-group input {
+    border: none; flex: 1; padding: 12px 8px; font-size: 1rem;
+}
+.flag {
+    margin-right: 8px;
+}
+textarea {
+    min-height: 100px; resize: vertical;
+}
+button[type="submit"] {
+    background-color: #0069d9; color: white; padding: 12px 20px; border: none; border-radius: 6px; font-size: 1rem; cursor: pointer;
+}
+.mentee {
+    background: linear-gradient( rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4) ), url("/static/img/IMG_3597-edit.jpg"); min-height: 450px; padding: 10px 5%; position: relative; top: 0; left: 0; text-align: center; color: #ffffff; background-size: cover; display: flex; justify-content: center; align-items: center; text-align: center;
+}

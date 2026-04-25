@@ -1,0 +1,116 @@
+{% extends 'base.html' %} {% block content %} {% load static %}
+<section>
+    <div class="slideshow-container">
+        <div class="mySlides fade is-active">
+            <div class="slide-text">
+                <h1 class="homepage__h1">Mojiire SupportHer Inc</h1>
+                <p>We are here to support you in every step of the way</p>
+                <a href="{% url 'about' %}" class="slideshow_link-button">Donate Now</a>
+            </div>
+            <img src="{% static 'img/image6.jpg' %}" alt="Mojiire Inc" class="slideshow__img-background" width="100%">
+        </div>
+        <div class="mySlides fade">
+            <div class="slide-text">
+                <h1 class="homepage__h1">Mojiire SupportHer Inc</h1>
+                <p>We are here to support you in every step of the way</p>
+                <a href="{% url 'about' %}" class="slideshow_link-button">Discover More</a>
+            </div>
+            <img src="{% static 'img/image4.jpg' %}" alt="Mojiire Inc" class="slideshow__img-background" width="100%">
+        </div>
+        <div class="mySlides fade">
+            <div class="slide-text">
+                <h1 class="homepage__h1">Mojiire SupportHer Inc</h1>
+                <p>We are here to support you in every step of the way</p>
+                <a href="{% url 'about' %}" class="slideshow_link-button">Donate Now</a>
+            </div>
+            <img src="{% static 'img/image5.jpg' %}" alt="Mojiire Inc" class="slideshow__img-background" width="100%">
+        </div>
+
+        <a class="prev" onclick="plusSlides(-1)"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="48"
+                style="fill: white;">
+                <title>chevron-left</title>
+                <path d="M15.41,16.58L10.83,12L15.41,7.41L14,6L8,12L14,18L15.41,16.58Z" />
+            </svg></a>
+        <a class="next" onclick="plusSlides(1)"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="48"
+                style="fill: white;">
+                <title>chevron-right</title>
+                <path d="M8.59,16.58L13.17,12L8.59,7.41L10,6L16,12L10,18L8.59,16.58Z" />
+            </svg></a>
+    </div>
+</section>
+<section class="index__section1-container">
+    <div>
+        <img src="{% static 'img/IMG_6305.PNG' %}" alt="" width="50%">
+    </div>
+    <div class="section1__div2-container">
+        <span class="tagline">Welcome to</span>
+        <h2>Mojiire SupportHer Inc</h2>
+        <p>Our mission is to empower teen girls through mentorship,
+            education, and support, enabling them to become confident and successful leaders.
+            We provide mentorship, educational resources, and a supportive community to help
+            young girls overcome challenges, build self-esteem, develop leadership skills,
+            encourage our mentees, and help girls achieve their full potential and create a more
+            equitable and empowered future.
+        </p>
+        <a href="{% url 'about' %}">Discover More</a>
+    </div>
+</section>
+<section class="homepage__vision-spotlight">
+    <div class="homepage__vision-spotlight-copy">
+        <span class="tagline">Change Everything</span>
+        <h2>Our Vision</h2>
+        <!-- <p>Our vision is to empower and inspire the next generation of teen girls, equipping them with the knowledge,
+            skills, and confidence to reach their full potential and become successful leaders in their communities and
+            beyond.</p> -->
+    </div>
+    <div class="homepage__vision-spotlight-panel">
+        <p>Our vision is to empower and inspire the next generation of teen girls, equipping
+            them with the knowledge, skills, and confidence to reach their full potential and
+            become successful leaders in their communities and beyond.
+        </p>
+    </div>
+</section>
+<section id="vision-section" style="background-color: rgb(238, 234, 238); color: black;">
+    
+    <div class="vision-section__story">
+        <p>Mojiire was a nickname given to the founder, Zakiya. Over time, it became more than a name. It became a
+            mantra. It represents waking up each day with purpose, strength, and clarity to support and uplift other
+            girls.</p>
+    </div>
+    <div class="vision-section__intro">
+        <span class="tagline">Our Mantra</span>
+        <h2>Mojiire</h2>
+        <p class="vision-section__pronunciation"><b><i>Mojiire (moh-jee-ray)</i></b></p>
+        <p class="vision-section__translation">"I woke up well" in the Yoruba language.</p>
+    </div>
+</section>
+<section class="homepage__section2-container">
+    <div>
+        <p>Join us to help us to make the change</p>
+        <h2>Objectives</h2>
+        <div>
+            <p>We serve girls that may experience: bullying, abuse, lack of social skills, low self esteem, single
+                parent household, or academic failure.</p>
+        </div>
+    </div>
+</section>
+<section class="homepage__helpform-container">
+    <p>Help us to contribute to bettering the lives of young girls in need.</p>
+    <form action="{% url 'contact' %}" method="post">
+        {% csrf_token %}
+        {{ form }}
+        <button>Submit</button>
+    </form>
+</section>
+<section class="homepage__joinus-container">
+    <div>
+        <span>Join Us Now</span>
+        <h2>Join us to make a change.</h2>
+        <form action="#" method="post">
+            <input type="email" name="Email" id="" placeholder="Email address">
+            <button>Subscribe</button>
+        </form>
+    </div>
+    <img src="{% static 'img/shape-4.png' %}" alt="">
+</section>
+{% endblock %}

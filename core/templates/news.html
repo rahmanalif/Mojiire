@@ -1,0 +1,70 @@
+{% extends 'base.html' %} {% block content %} {% load static %}
+            <section>
+                <div class="subpage__section-container news">
+                    <h1 class="subpage__h1">News</h1>
+                </div>
+            </section>
+            <section class="news__past-events">
+                <div class="gallery-grid">
+                {% for testing in testing %}
+                    <div class="gallery-item">
+                        <img loading="lazy" src="/media/{{ testing.eventImage1 }}" alt="" id="img-option-1">
+                        <ul class="gallery__controls-wrapper">
+                            <li class="gallery-controls">
+                                <img loading="lazy" src="/media/{{ testing.eventImage1 }}" alt="{{ testing.eventSummary }}" id="img-option-1">
+                            </li>
+                            <li class="gallery-controls">
+                                <img loading="lazy" src="/media/{{ testing.eventImage2 }}" alt="" id="img-option-1">
+                            </li>
+                            <li class="gallery-controls">
+                                <img loading="lazy" src="/media/{{ testing.eventImage3 }}" alt="" id="img-option-1">
+                            </li>
+                            <li class="gallery-controls">
+                                <img loading="lazy" src="/media/{{ testing.eventImage4 }}" alt="" id="img-option-1">
+                            </li>
+                            <li class="gallery-controls">
+                                <img loading="lazy" src="/media/{{ testing.eventImage5 }}" alt="" id="img-option-1">
+                            </li>
+                            <li class="gallery-controls">
+                                <img loading="lazy" src="/media/{{ testing.eventImage6 }}" alt="" id="img-option-1">
+                            </li>
+                            <li class="gallery-controls">
+                                <img loading="lazy" src="/media/{{ testing.eventImage7 }}" alt="" id="img-option-1">
+                            </li>
+                            <li class="gallery-controls">
+                                <img loading="lazy" src="/media/{{ testing.eventImage8 }}" alt="" id="img-option-1">
+                            </li>
+                        </ul>
+                        <h3>{{ testing.eventName }}</h3>
+                        <span>{{ testing.eventDate }}</span>
+                        <p>{{ testing.eventSummary }}</p>
+                    </div>
+                {% endfor %}
+                </div>
+            </section>
+            <section id="events-page">
+                <h1>Upcoming Events</h1>
+
+                <div class="events-container">
+                <div class="calendar">
+                    <div class="calendar-header">
+                    <button id="prev-month">&#10094;</button>
+                    <h2 id="month-year"></h2>
+                    <button id="next-month">&#10095;</button>
+                    </div>
+                    <div class="calendar-grid" id="calendar-days"></div>
+                </div>
+
+                <div class="event-list">
+                    <h2>Events</h2>
+                    <ul id="event-items">
+                    {% for event in upcoming_events %}
+                    <li><strong>{{ event.event_date|date:"F j, Y" }}</strong> - {{ event.title }}{% if event.description %}: {{ event.description }}{% endif %}</li>
+                    {% empty %}
+                    <li>No upcoming events have been added yet.</li>
+                    {% endfor %}
+                    </ul>
+                </div>
+                </div>
+            </section>
+{% endblock %}
