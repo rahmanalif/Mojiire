@@ -65,5 +65,5 @@ button {
     margin-top: 40px;
 }
 .contact {
-    background: linear-gradient( rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2) ), url("/static/img/contact-mojiire-support-her-image.jpg"); min-height: 450px; padding: 10px 5%; position: relative; top: 0; left: 0; text-align: center; color: #ffffff; background-size: cover; display: flex; justify-content: center; align-items: center; text-align: center;
+    background: linear-gradient( rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2) ), url("/static/img/ballon1.jpg"); min-height: 450px; padding: 10px 5%; position: relative; top: 0; left: 0; text-align: center; color: #ffffff; background-size: cover; display: flex; justify-content: center; align-items: center; text-align: center;
 }

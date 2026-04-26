@@ -1,16 +1,45 @@
 {% extends 'base.html' %} {% block content %} {% load static %}
-            <section>
-                <div class="subpage__section-container initiatives">
-                    <h1 class="subpage__h1">Initiatives</h1>
-                </div>
-            </section>
-            <section class="about__ourvalues-container">
-                <div>
-                    <h2>Initiatives</h2>
-                        <p><strong>Career Program:</strong> Offer a specialized focus on the career interests of the young women in our program. Also, the program will allow the students to explore various career fields.</p>
-                        <p><strong>Leadership Development Opportunities:</strong> Create opportunities for mentees to develop leadership skills through roles such as peer mentors, event organizers, and project leaders within the program.</p>
-                        <p><strong>Alumni Network:</strong> Establish an alumni network to provide ongoing support, mentorship, and networking opportunities for program graduates as they transition to college and beyond.</p>
-                        <p><strong>Online Mentorship Platform:</strong> Develop an online platform where mentees can connect with mentors, access resources, and engage in discussions and activities.</p>
-                </div>
-            </section>
+<section>
+    <div class="subpage__section-container initiatives">
+        <h1 class="subpage__h1">Initiatives</h1>
+    </div>
+</section>
+
+<section class="initiatives-page">
+    <div class="initiatives-page__intro">
+        <span class="tagline">Program Initiatives</span>
+        <h2>Sisterhood Bonding Activities</h2>
+        <p>Our initiatives are designed to help young women build confidence, explore their futures, grow as leaders, and develop meaningful peer connections in a safe and supportive community.</p>
+    </div>
+
+    <div class="initiatives-grid">
+        <article class="initiative-card initiative-card--featured">
+            <div class="initiative-card__number">01</div>
+            <h3>Social-Emotional Learning (SEL) Course Initiative</h3>
+            <p>Implement an 8-week structured social-emotional learning course designed to help young women develop self-awareness, emotional regulation, and healthy coping strategies.</p>
+            <p>This course will focus on recognizing triggers, managing stress, building confidence, and fostering positive relationships. Sessions will include guided discussions, interactive activities, and practical techniques such as mindfulness, journaling, and communication skills to support overall mental wellness.</p>
+        </article>
+
+        <article class="initiative-card">
+            <div class="initiative-card__number">02</div>
+            <h3>Career Exploration Program</h3>
+            <p>Offer a specialized career readiness program that aligns with the individual interests of each mentee.</p>
+            <p>Participants will explore various career fields through workshops, guest speakers, and hands-on experiences, while gaining essential skills such as resume building, interview preparation, and professional etiquette.</p>
+        </article>
+
+        <article class="initiative-card">
+            <div class="initiative-card__number">03</div>
+            <h3>Leadership Development Opportunities</h3>
+            <p>Create intentional opportunities for mentees to develop leadership skills by serving in roles such as peer mentors, event organizers, and project leaders.</p>
+            <p>These experiences will help build confidence, accountability, and the ability to lead with purpose.</p>
+        </article>
+
+        <article class="initiative-card initiative-card--community">
+            <div class="initiative-card__number">04</div>
+            <h3>Peer Connection & Community Building</h3>
+            <p>Cultivate a strong sense of community and belonging through intentional relationship building experiences.</p>
+            <p>Activities will include social outings, team-building exercises, and engaging workshops such as creative arts sessions, wellness days, and guided group discussions. These experiences are designed to foster a safe and supportive environment where young women feel connected, valued, and empowered to build meaningful, lasting relationships.</p>
+        </article>
+    </div>
+</section>
 {% endblock %}
