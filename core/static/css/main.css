@@ -234,6 +234,7 @@ main {
     margin: 0;
     color: #362947;
 }
+/* extra work */
 .vision-section__intro {
     display: flex;
     flex-direction: column;
@@ -532,7 +533,7 @@ footer svg:hover {
     background: linear-gradient( rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2) ), url("/static/img/image4.jpg"); min-height: 450px; padding: 10px 5%; position: relative; top: 0; left: 0; text-align: center; color: #ffffff; background-size: cover; display: flex; justify-content: center; align-items: center; text-align: center;
 }
 .initiatives {
-    background: linear-gradient( rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2) ), url("/static/img/IMG_3597-edit.jpg"); min-height: 450px; padding: 10px 5%; position: relative; top: 0; left: 0; text-align: center; color: #ffffff; background-size: cover; display: flex; justify-content: center; align-items: center; text-align: center;
+    background: linear-gradient( rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2) ), url("/static/img/pic11.jpg"); min-height: 450px; padding: 10px 5%; position: relative; top: 0; left: 0; text-align: center; color: #ffffff; background-size: cover; display: flex; justify-content: center; align-items: center; text-align: center;
 }
 .news {
     background: linear-gradient( rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2) ), url("/static/img/image10.jpg"); min-height: 450px; padding: 10px 5%; position: relative; top: 0; left: 0; text-align: center; color: #ffffff; background-size: cover; display: flex; justify-content: center; align-items: center; text-align: center;
