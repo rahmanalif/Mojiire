@@ -156,7 +156,7 @@ main {
     line-height: 1.6; margin: 20px 0;
 }
 .index__section1-container a {
-    display: inline-block; background-color: rgb(120, 53, 196); color: white; padding: 18px 35px; border-radius: 6px; text-decoration: none; font-weight: bold; transition: background 0.3s;
+    display: inline-block; background-color: #6f25c3; color: white; padding: 18px 35px; border-radius: 6px; text-decoration: none; font-weight: bold; transition: background 0.3s;
 }
 .index__section1-container a:hover {
     background-color: rgb(120, 53, 196);
@@ -386,7 +386,7 @@ main {
     flex: 0 0 420px;
 }
 .homepage__helpform-container form button {
-    background: linear-gradient(135deg, #7428cb 0%, #5e1fb0 100%);
+    background: #6f25c3;
     color: #fff;
     border: none;
     border-radius: 12px;
@@ -525,6 +525,7 @@ footer svg:hover {
 }
 .subpage__h1 {
     font-size: 4rem;
+    
 }
 .about {
     background: linear-gradient( rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2) ), url("/static/img/ballon.jpg"); min-height: 450px; padding: 10px 5%; position: relative; top: 0; left: 0; text-align: center; color: #ffffff; background-size: cover; display: flex; justify-content: center; align-items: center; text-align: center;
@@ -563,7 +564,7 @@ label::after {
     width: 100%; border: none;
 }
 .homepage__joinus-container button {
-    background-color: #c72cc4;
+    background-color: #6f25c3;
 }
 
 
@@ -736,6 +737,12 @@ label::after {
     border-radius: 50%;
     object-fit: cover;
     box-shadow: 0 14px 34px rgba(92, 30, 164, 0.16);
+}
+.board-card__photo--top {
+    object-position: top;
+}
+.board-card__photo--carolyn {
+    object-position: center 18%;
 }
 .board-card__avatar {
     display: flex;

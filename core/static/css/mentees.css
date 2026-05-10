@@ -38,7 +38,7 @@ textarea {
     min-height: 100px; resize: vertical;
 }
 button[type="submit"] {
-    background-color: #0069d9; color: white; padding: 12px 20px; border: none; border-radius: 6px; font-size: 1rem; cursor: pointer;
+    background-color: #6f25c3; color: white; padding: 12px 20px; border: none; border-radius: 6px; font-size: 1rem; cursor: pointer;
 }
 .mentee {
     background: linear-gradient( rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4) ), url("/static/img/IMG_3597-edit.jpg"); min-height: 450px; padding: 10px 5%; position: relative; top: 0; left: 0; text-align: center; color: #ffffff; background-size: cover; display: flex; justify-content: center; align-items: center; text-align: center;
