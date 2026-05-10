@@ -319,6 +319,9 @@ main {
 .quick-links-columns a:hover {
     color: #c72cc4;
 }
+.quick-links-columns a.footer-contact-link:hover {
+    color: #444;
+}
 .homepage__helpform-container {
     position: relative;
     max-width: 84%;
